@@ -1,0 +1,161 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Freelance LLM AI Trainer/Annotator</h2>
+                    <h3 class="text-primary">Data Annotation Tech</h3>
+                    <ul>
+                        <li>Provided data annotation for AI model training (data visualization, computer science, and machine learning knowledge).</li>
+                        <li>Collaborated on prompt engineering and QA for model output accuracy</li>
+                        <li>Applied RLHF techniques to improve model efficiency/performance.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Developer</h2>
+                    <h3 class="text-primary">DE Web Works</h3>
+                    <ul>
+                        <li>Developed and updated client websites (Visual Basic, ASP.Net).</li>
+                        <li>Created backend applications for data reporting.</li>
+                        <li>Integrated third-party APIs for client specifications.</li>
+                        <li>Managed Microsoft SQL Server databases</li>
+                        <li>Programmatically managed database connections and queries</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Owner / Manager of Operations</h2>
+                    <h3 class="text-primary">Nerdy Necessities</h3>
+                    <ul>
+                        <li>Managed retail business operations (inventory, accounting, payroll).</li>
+                        <li>Developed and maintained the company website and online presence.</li>
+                        <li>Managed business agreements, marketing, and customer relationships.</li>
+                        <li>Oversaw all business aspects, from strategy to execution.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Jr. Software Developer / Systems Administrator</h2>
+                    <h3 class="text-primary">CU-Interface</h3>
+                    <ul>
+                        <li>Developed and deployed iOS/Android applications (Objective C, Java).</li>
+                        <li>Maintained client websites (HTML, CSS, JavaScript, AJAX).</li>
+                        <li>Developed core data processing software (C#, .Net Framework).</li>
+                        <li>Managed Microsoft SQL Server databases and programmatic queries.</li>
+                        <li>Debugged and optimized existing codebases.</li>
+                        <li>Created automation tools for various tasks.</li>
+                        <li>Provided IT support, managing Windows Servers and over 500 PCs.</li>
+                    </ul>
+                </div>
+                
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+
+                <div class="row "style="text-align: left;">
+                    <div class="col">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Kotlin</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>Visual Basic (.NET)</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>XML</li>
+                            <li>JSON</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks and Databases</h3>
+                        <ul>
+                            <li>.NET</li>
+                            <li>ASP.NET</li>
+                            <li>Jetpack Compose</li>
+                            <li>Angular</li>
+                            <li>Microsoft SQL Server</li>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                            <li>Room Database</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Tools & Other</h3>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>Android Studio</li>
+                            <li>Xcode</li>
+                            <li>Visual Studio</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>Android and iOS Development</li>
+                            <li>Automation</li>
+                            <li>Scripting</li>
+                            <li>Project Management</li>
+                            <li>Team Management</li>
+                            <li>Problem Solving</li>
+                            <li>Communication and Interpersonal Skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor's of Science in Applied Science (BSAS) in Computer Information Systems</h2>
+                    <h3 class="text-primary">Youngstown State University</h3>
+                    <ul>
+                        <li>Graduated with a 3.5 GPA</li>
+                        <li>Completed a minor in Web Communication</li>
+                        <li>Relevant Coursework included:
+                            <ul>
+                                <li>Object Oriented Programming</li>
+                                <li>Database Management</li>
+                                <li>Web Development</li>
+                                <li>Operatins Systems</li>
+                                <li>Security Practices</li>
+                                <li>and more</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </accordion-group>
+        </accordion>
+    </div>
+    
+</div>

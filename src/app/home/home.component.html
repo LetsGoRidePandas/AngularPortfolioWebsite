@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <!--About Me-->
+        <div class="col-lg shadow border m-1" style="background-color: white;">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="/7t7tg7.PNG" alt="Michael Gagnon Headshot" width="256" height="256" class="rounded-circle">
+                <p class="line-break">{{aboutMe}}</p>
+            </div>
+        </div>
+        <!--Featured Project-->
+        <div class="col-lg shadow border m-1" style="background-color: white;">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide style="background-color: darkgrey;"><img src={{picture}} alt="slide" style="display: block; max-width: 100%; margin-left: auto; margin-right: auto; "></slide>
+                </div>
+            </carousel>
+            
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>
