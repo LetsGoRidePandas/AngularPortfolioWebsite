@@ -7,7 +7,7 @@ export class Tag{
     static readonly JAVA = new Tag('Java', 'darkgoldenrod');
     static readonly SQL = new Tag('SQL', 'orange');
     static readonly CSS = new Tag('CSS', 'indigo');
-    static readonly JAVASCRIPT = new Tag('Javacript', 'yellow');
+    static readonly JAVASCRIPT = new Tag('JavaScript', 'gold');
     static readonly HTML = new Tag('HTML', 'orangered');
     static readonly UNITY = new Tag('Unity', 'darkgrey');
     static readonly ASPNET = new Tag('ASP.NET', 'steelblue');
